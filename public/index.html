@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawcodeChart);
+      google.charts.setOnLoadCallback(drawdesignChart);
+      google.charts.setOnLoadCallback(drawferramentasChart);
+
+      function drawdesignChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn("string", "Topping");
+        data.addColumn("number", "Slices");
+        data.addRows([
+          ["Web Design", 30],
+          ["UI Design", 30],
+          ["typography", 20],
+          ["Ux Design", 20],
+        ]);
+
+        var options = {
+          title: "How Much Design do I know",
+          pieHole: 0.4,
+          animation: {'duration': 1500, "startup": true},
+          colors: ["#9D30A1", "#681980", "#500D63", "#410B4A"],
+          width: 500,
+          height: 500,
+          backgroundColor: "transparent",
+          legend: { textStyle: { color: "white", fontSize: 14 } },
+          title: { textStyle: { color: "white", fontSize: 16 } },
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("design_chart_div")
+        );
+        chart.draw(data, options);
+      }
+      function drawcodeChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn("string", "Topping");
+        data.addColumn("number", "Slices");
+        data.addRows([
+          ["HTML", 35],
+          ["Css", 30],
+          ["JavaScript", 25],
+          ["React", 10],
+        ]);
+
+        var options = {
+          title: "How Much code do I know",
+          pieHole: 0.4,
+          pieSliceTextStyle: {
+            color: "black",
+          },
+          colors: ["#2A4071", "#082B7A", "#2852B2", "#4C649B"],
+          width: 500,
+          height: 500,
+          backgroundColor: "transparent",
+          legend: { textStyle: { color: "white", fontSize: 14 } },
+          title: { textStyle: { color: "white", fontSize: 16 } },
+        };
+
+        var chart = new google.visualization.PieChart(
+          document.getElementById("code_chart_div")
+        );
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <li><a id="about"> ABOUT ME </a></li>
+        <li><a id="skills"> SKILLS </a></li>
+        <li><a id="projects"> PROJECTS </a></li>
+        <li><a id="contact"> CONTACT </a></li>
+      </nav>
+      <h1>Lesly Notter</h1>
+
+      <div></div>
+    </header>
+
+    <div class="about">
+      <h1>About me</h1>
+      <div class="traco1"></div>
+      <div class="aboutflex">
+        <img src="./imgs/eu2.JPG" />
+
+        <ul>
+          <p>My name is Lesly Notter dos Anjos and I am a Frontend Developer</p>
+          <br />
+          <p>
+            I'm doing a bachelor's degree in information systems and I will
+            graduate in December 2021.
+          </p>
+          <br />
+          <p>
+            I love to code, but I also love arts and I would love to be in an
+            environment where I can be creative
+          </p>
+        </ul>
+      </div>
+    </div>
+
+    <section class="second" id="second">
+      <h1>Skills</h1>
+      <div class="traco2"></div>
+
+      <div class="Titulos">
+        <h2 class="design">Design</h2>
+
+        <h2 class="code">Code</h2>
+      </div>
+      <section class="flex">
+        <div id="design_chart_div"></div>
+
+        <div class="traco"></div>
+
+        <div id="code_chart_div"></div>
+      </section>
+    </section>
+
+    <section class="project">
+      <h1>Projects</h1>
+      <div class="traco3"></div>
+
+      <ul class="slide" id="slide">
+        <li><img src="./imgs/project orphanage.JPG" /></li>
+        <li><img src="./imgs/dog project.JPG" /></li>
+        <li><img src="./imgs/fantastic animals.JPG" /></li>
+        <li><img src="./imgs/prototipo.JPG" /></li>
+      </ul>
+      <div>
+        <ul class="bolinhas" id="bolinhas">
+          <li class="bolinha" id="bolinha1"></li>
+          <li class="bolinha" id="bolinha2"></li>
+          <li class="bolinha" id="bolinha3"></li>
+          <li class="bolinha" id="bolinha4"></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <p><a href="https://github.com/notter-lesly">Github</a></p>
+        <p><a href="https://www.linkedin.com/in/leslynotter">Linkedin</a></p>
+        <p>
+          <a href="https://api.whatsapp.com/send?phone=310627586099"
+            >Whatsapp</a
+          >
+        </p>
+      </div>
+      <div class="direitos">
+        <p>All the drawings in this page are made by me :)</p>
+      </div>
+    </footer>
+    <script type="module" src="index.js"></script>
+    <script src="./modules/headermenu.js"></script>
+    <script src="./modules/projects.js"></script>
+  </body>
+</html>

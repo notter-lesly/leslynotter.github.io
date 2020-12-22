@@ -1,0 +1,30 @@
+footer {
+  background: url("../imgs/bug.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  width: 100vw;
+  background-size: cover;
+  position: absolute;
+  margin-bottom: 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+.footer p {
+  font-size: 2vw;
+  padding-top: 3vw;
+  font-family: "Montserrat";
+}
+
+.direitos {
+  text-align: right;
+  font-size: 1.6vw;
+  color: #b2aeae;
+  margin-top: 15vw;
+  margin-right: 1.5vw;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,60 @@
+.second {
+  background-color: #1b1b1c;
+  max-width: 100vw;
+  max-height: 120vh;
+}
+.second h1 {
+  color: white;
+  font-family: "Tangerine";
+  font-size: 5vw;
+  text-align: center;
+  padding-top: 2vw;
+}
+
+.second p {
+  font-size: 2vw;
+  line-height: 3vw;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  max-height: 50vw;
+}
+
+.traco {
+  content: "";
+
+  height: 70vh;
+  border: solid 1px rgb(122, 122, 122);
+}
+
+.design:hover {
+  color: #9d30a1;
+  transition: 0.4s;
+  box-shadow: white;
+}
+
+.Titulos h2 {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 2vw;
+}
+
+.code:hover {
+  color: #2a4071;
+  transition: 0.4s;
+  box-shadow: white;
+}
+
+.traco2 {
+  content: "";
+  width: 20vw;
+  border: solid 1px white;
+  margin: auto;
+}
+.Titulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
