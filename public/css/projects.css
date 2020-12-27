@@ -12,67 +12,92 @@
   padding-top: 1vw;
   font-weight: bold;
 }
-.slide {
-  display: flex;
-  max-width: 90vw;
-}
 
-.slide li {
-  width: 80vw;
-
-  flex-shrink: 0;
-  max-width: 80vw;
-
-  margin-top: 1vw;
-  padding: 0;
-}
-
-.slide img {
-  max-width: 50vw;
-  min-width: 75vw;
-  max-height: 40vw;
-  margin: 0;
-}
-.bolinhas {
-  display: flex;
-  justify-content: center;
-  flex-shrink: 0;
-  column-gap: 1vw;
-  margin-bottom: 1vw;
-}
-
-.bolinha {
-  content: "";
-  width: 2vh;
-  height: 2vh;
-  border: solid 0.5vw#481E54;
-  border-radius: 5vh;
-  align-content: center;
-}
-.bolinhas li {
-  cursor: pointer;
-}
 .traco3 {
   content: "";
   width: 20vw;
-  border: solid 1px rgb(122, 122, 122);
+  border: solid 0.05vw rgb(122, 122, 122);
+  margin: auto;
+  margin-bottom: 1vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  max-width: 80vw;
+  position: relative;
   margin: auto;
 }
 
-.slide {
-  transform: translate3d(200px, 0px, 0px);
-}
-.slide.f1 {
-  transform: translate3d(200px, 0px, 0px);
-}
-.slide.f2 {
-  transform: translate3d(-900px, 0px, 0px);
+.mySlides {
+  display: none;
 }
 
-.slide.f3 {
-  transform: translate3d(-2100px, 0px, 0px);
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.slide.f4 {
-  transform: translate3d(-3150px, 0px, 0px);
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 1.5vw;
+  width: 1.5vw;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
