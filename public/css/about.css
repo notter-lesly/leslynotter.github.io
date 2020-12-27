@@ -26,12 +26,13 @@
 }
 .about img {
   width: 25vw;
+  height: 25vw;
   margin-right: 5vw;
   border-radius: 4vw;
 }
 .traco1 {
   content: "";
   width: 20vw;
-  border: solid 1px rgb(122, 122, 122);
+  border: solid 0.05vw rgb(122, 122, 122);
   margin: auto;
 }
