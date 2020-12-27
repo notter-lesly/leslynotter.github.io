@@ -138,19 +138,33 @@
       <h1>Projects</h1>
       <div class="traco3"></div>
 
-      <ul class="slide" id="slide">
-        <li><img src="./public/imgs/project orphanage.JPG" /></li>
-        <li><img src="./public/imgs/dog project.JPG" /></li>
-        <li><img src="./public/imgs/fantastic animals.JPG" /></li>
-        <li><img src="./public/imgs/prototipo.JPG" /></li>
-      </ul>
-      <div>
-        <ul class="bolinhas" id="bolinhas">
-          <li class="bolinha" id="bolinha1"></li>
-          <li class="bolinha" id="bolinha2"></li>
-          <li class="bolinha" id="bolinha3"></li>
-          <li class="bolinha" id="bolinha4"></li>
-        </ul>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="./public/imgs/project orphanage.JPG" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./public/imgs/dog project.JPG" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./public/imgs/fantastic animals.JPG" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./public/imgs/prototipo.JPG" style="width: 100%" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
       </div>
     </section>
 
