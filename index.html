@@ -11,7 +11,6 @@
       google.charts.load("current", { packages: ["corechart"] });
       google.charts.setOnLoadCallback(drawcodeChart);
       google.charts.setOnLoadCallback(drawdesignChart);
-      google.charts.setOnLoadCallback(drawferramentasChart);
 
       function drawdesignChart() {
         var data = new google.visualization.DataTable();
@@ -27,7 +26,6 @@
         var options = {
           title: "How Much Design do I know",
           pieHole: 0.4,
-          animation: {'duration': 1500, "startup": true},
           colors: ["#9D30A1", "#681980", "#500D63", "#410B4A"],
           width: 500,
           height: 500,
